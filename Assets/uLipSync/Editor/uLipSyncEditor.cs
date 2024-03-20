@@ -201,6 +201,7 @@ public class uLipSyncEditor : Editor
             }
         }
         var arr = _recognizedPhonemes.ToString().ToCharArray();
+
         System.Array.Reverse(arr);
         var str = new string(arr);
         EditorGUILayout.LabelField("Recognized Phoeneme", str);
